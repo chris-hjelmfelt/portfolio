@@ -1,24 +1,16 @@
-# portfolio
+## My Portfolio  
 
-## Project setup
-```
-npm install
-```
+This is a collection of things I have made    
+- programming
+- art
+- 3D models
+- games
+- writing
+- and more ...
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Made with Vue.js  
 
-### Compiles and minifies for production
-```
-npm run build
-```
 
-### Run your unit tests
-```
-npm run test:unit
-```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
