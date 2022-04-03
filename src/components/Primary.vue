@@ -7,7 +7,7 @@
         <ul>
           <li><router-link to="/resume">Resume</router-link></li>
           <li>Website Development - links to sites</li>
-          <li>3D Models</li>
+          <li><router-link to="/models">3D Models</router-link></li>
           <li>Games</li>
           <li>Writing</li>
         </ul>
