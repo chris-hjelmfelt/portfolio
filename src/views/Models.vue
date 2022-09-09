@@ -7,18 +7,26 @@
         <span class="group-title">Blender Models</span>       
         <span class="note">Click on an image to see a larger version</span>
       </div>
-      <div class="row pictures">     
-        <div class="col-6 picture">
-          <img ref="b2" src="../assets/images/Blender_Gazebo.png" @click="BigImage($event.target.src)">
+      <div class="pictures">    
+        <div class="row">  
+          <div class="col-6 picture">
+            <img ref="b2" src="../assets/images/Blender_Gazebo.png" @click="BigImage($event.target.src)">
+          </div>
+          <div class="col-6 picture">
+            <img ref="b3" src="../assets/images/Blender_LampPost.png" @click="BigImage($event.target.src)">
+          </div>
+          <div class="col-6 picture">
+            <img ref="b4" src="../assets/images/Blender_Bridge.png" @click="BigImage($event.target.src)">
+          </div>
+          <div class="col-6 picture">
+            <img ref="b1" src="../assets/images/Blender_Book.png" @click="BigImage($event.target.src)">
+          </div> 
         </div>
-        <div class="col-6 picture">
-          <img ref="b3" src="../assets/images/Blender_LampPost.png" @click="BigImage($event.target.src)">
-        </div>
-        <div class="col-6 picture">
-          <img ref="b4" src="../assets/images/Blender_Bridge.png" @click="BigImage($event.target.src)">
-        </div>
-        <div class="col-6 picture">
-          <img ref="b1" src="../assets/images/Blender_Book.png" @click="BigImage($event.target.src)">
+
+        <div class="row">  
+          <div class="col-6 picture">
+            <img ref="b2" src="../assets/images/Blender_TabletWithHandles.png" @click="BigImage($event.target.src)">
+          </div>
         </div>
       </div>
 

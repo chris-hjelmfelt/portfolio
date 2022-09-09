@@ -9,7 +9,7 @@
           <li>Website Development - links to sites</li>
           <li><router-link to="/models">3D Models</router-link></li>
           <li>Games</li>
-          <li>Writing</li>
+          <li><router-link to="/writing">Writing</router-link></li>
         </ul>
       </div>      
       <img class="image1" alt="Gazebo" src="../assets/images/Blender_Gazebo.png" />
