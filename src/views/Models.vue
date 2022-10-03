@@ -25,8 +25,15 @@
 
         <div class="row">  
           <div class="col-6 picture">
+            <img ref="b2" src="../assets/images/Blender_Windmill.png" @click="BigImage($event.target.src)">
+          </div>
+          <div class="col-6 picture">
             <img ref="b2" src="../assets/images/Blender_TabletWithHandles.png" @click="BigImage($event.target.src)">
           </div>
+          <div class="col-6 picture">
+            <img ref="b2" src="../assets/images/Blender_HayWagon.png" @click="BigImage($event.target.src)">
+          </div>
+          
         </div>
       </div>
 
@@ -40,9 +47,6 @@
         </div>
         <div class="col-6 picture">
           <img ref="r2" src="../assets/images/Roblox_Woodworking.png" @click="BigImage($event.target.src)">
-        </div>
-        <div class="col-6 picture">
-          <img ref="r3" src="../assets/images/Roblox_Windmill.png" @click="BigImage($event.target.src)">
         </div>
         <div class="col-6 picture">
           <img ref="r4" src="../assets/images/Roblox_TruckWorkZone.png" @click="BigImage($event.target.src)">
