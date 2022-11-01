@@ -1,56 +1,32 @@
 <template>
   <div class="page">
-    <h2>3D Models by Christine Hjelmfelt </h2>
+    <h2 id="title">3D Models</h2>
 
     <div class="gallery">  
       <div class="row">
-        <span class="group-title">Blender Models</span>       
+        <span class="group-title">Blender Models</span>  <br>     
         <span class="note">Click on an image to see a larger version</span>
       </div>
-      <div class="pictures">    
-        <div class="row">  
-          <div class="col-6 picture">
-            <img ref="b2" src="../assets/images-models/Blender_Gazebo.png" @click="BigImage($event.target.src)">
-          </div>
-          <div class="col-6 picture">
-            <img ref="b3" src="../assets/images-models/Blender_LampPost.png" @click="BigImage($event.target.src)">
-          </div>
-          <div class="col-6 picture">
-            <img ref="b4" src="../assets/images-models/Blender_Bridge.png" @click="BigImage($event.target.src)">
-          </div>
-          <div class="col-6 picture">
-            <img ref="b1" src="../assets/images-models/Blender_Book.png" @click="BigImage($event.target.src)">
-          </div> 
-        </div>
-
-        <div class="row">  
-          <div class="col-6 picture">
-            <img ref="b2" src="../assets/images-models/Blender_Windmill.png" @click="BigImage($event.target.src)">
-          </div>
-          <div class="col-6 picture">
-            <img ref="b2" src="../assets/images-models/Blender_TabletWithHandles.png" @click="BigImage($event.target.src)">
-          </div>
-          <div class="col-6 picture">
-            <img ref="b2" src="../assets/images-models/Blender_HayWagon.png" @click="BigImage($event.target.src)">
-          </div>
-          
-        </div>
+      <div class="row picture-group">
+          <img class="picture" ref="b2" src="../assets/images-models/Blender_Gazebo.png" @click="BigImage($event.target.src)">        
+          <img class="picture" ref="b3" src="../assets/images-models/Blender_LampPost.png" @click="BigImage($event.target.src)">        
+          <img class="picture" ref="b4" src="../assets/images-models/Blender_Bridge.png" @click="BigImage($event.target.src)">        
+          <img class="picture" ref="b1" src="../assets/images-models/Blender_Book.png" @click="BigImage($event.target.src)">        
+          <img class="picture" ref="b2" src="../assets/images-models/Blender_Windmill.png" @click="BigImage($event.target.src)">        
+          <img class="picture" ref="b2" src="../assets/images-models/Blender_TabletWithHandles.png" @click="BigImage($event.target.src)">        
+          <img class="picture" ref="b2" src="../assets/images-models/Blender_HayWagon.png" @click="BigImage($event.target.src)">       
       </div>
+    </div>
 
-      <div class="row">
-        <span class="group-title">Models from BloxRiver Farms - A game on the Roblox Platform</span>
+    <div class="gallery">  
+      <div class="row label">
+        <span class="group-title">Models from BloxRiver Farms - A game on the Roblox Platform</span><br>
         <span class="note">Roblox is a gaming platform for children</span>
       </div>
-      <div class="row pictures"> 
-        <div class="col-6 picture">
-          <img ref="r1" src="../assets/images-models/Roblox_FarmTiles.png" @click="BigImage($event.target.src)">
-        </div>
-        <div class="col-6 picture">
-          <img ref="r2" src="../assets/images-models/Roblox_Woodworking.png" @click="BigImage($event.target.src)">
-        </div>
-        <div class="col-6 picture">
-          <img ref="r4" src="../assets/images-models/Roblox_TruckWorkZone.png" @click="BigImage($event.target.src)">
-        </div>
+      <div class="row picture-group">         
+          <img class="picture" ref="r1" src="../assets/images-models/Roblox_FarmTiles.png" @click="BigImage($event.target.src)">        
+          <img class="picture" ref="r2" src="../assets/images-models/Roblox_Woodworking.png" @click="BigImage($event.target.src)">       
+          <img class="picture" ref="r4" src="../assets/images-models/Roblox_TruckWorkZone.png" @click="BigImage($event.target.src)">        
       </div>
     </div>
 
@@ -83,23 +59,20 @@
 </script>
 
 <style lang="scss" scoped>
-#page {
-  width: 100%;
-  height: 100%;
+#title {
+  display: block;
+  width: fit-content;
   margin: auto;
-  overflow-y: auto;
 }
-
 .gallery {  
   width: 100%;
+  margin-bottom: 20px;
 }
 .row {
-  width: 96%;
-  padding: 10px 30px 30px 30px;
-  background-color: black;
+  width: 100%;
+  padding: 10px 10px 10px 30px;
+  background-color: #5097b8;
   margin: auto;
-  display: flex;
-  justify-content: space-between;
 }
 .group-title {
   font-weight: bold;
@@ -107,12 +80,18 @@
 .note {
   color: white;
 }
-.pictures {  
-  margin-bottom: 1vw;
+.picture-group {  
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  list-style: none;
 }
-img {
-  height: 10vw;
-  border: 4px solid white;
+.picture { 
+  display: block; 
+  width: auto;
+  height: auto;
+  max-height: 30vh;
+  border: 2px solid white;
 }
 
 
@@ -122,7 +101,7 @@ img {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 100px; 
+  padding-top: 30px; 
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -134,10 +113,13 @@ img {
 
 /* Modal Content (image) */
 .modal-content {
-  margin: auto;
   display: block;
-  width: 95%;
+  object-fit: cover;
+  width: 100%;
+  height: 95%;
+  width: auto;
   height: auto;
+  margin: auto;
 }
 
 /* Add Animation */
@@ -166,4 +148,12 @@ img {
   cursor: pointer;
 }
 
+@media screen and (max-width: 900px) {
+  .picture {
+    max-height: 180px;
+  }
+  .modal-content {
+    max-height: 220px
+  }
+}
 </style>

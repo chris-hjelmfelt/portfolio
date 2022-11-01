@@ -63,15 +63,14 @@
   border: 1px solid black;
   width: 100%;
   height: 150px;
-  overflow: hidden;
   margin-bottom: 20px;
+  overflow: hidden;
 }
 .thumbnail {
   width: 150px;
   height: 150px;
   border: 1px solid black;  
-  float: left;  
-  overflow: auto;
+  float: left; 
 }
 .title {
   display: block;
@@ -84,5 +83,6 @@
   padding: 10px 10px 10px 20px;
   border: 1px solid black;
   float: left;
+  overflow: auto;
 }
 </style>

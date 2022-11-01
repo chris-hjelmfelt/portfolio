@@ -1,7 +1,7 @@
 <template>
   <div class="page">
     <div id="start" v-if="source == null">
-      <h2>My Games</h2>
+      <h2 id="title">Games</h2>
       {{source}}
       <GameList />
     </div>
@@ -46,5 +46,10 @@ iframe {
   width: 1100px;
   height: 650px;
   overflow: auto;
+}
+#title {
+  display: block;
+  width: fit-content;
+  margin: auto;
 }
 </style>
