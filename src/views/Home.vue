@@ -10,7 +10,6 @@
           <li><router-link to="/models">3D Models</router-link></li>
         </ul>
       </div>      
-      <img class="image1" alt="Gazebo" src="../assets/images/Blender_Gazebo.png" />
     </div>
   </div>
 </template>

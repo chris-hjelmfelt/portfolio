@@ -4,7 +4,7 @@
     <router-link to="/resume">Resume</router-link> | 
     <router-link to="/models">3D Models</router-link> |
     <router-link to="/games">Games</router-link> |
-    <router-link to="/writing">Writing</router-link>
+    <!-- <router-link to="/writing">Writing</router-link> -->
   </div>
   <router-view/>
 </template>

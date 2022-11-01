@@ -8,9 +8,9 @@
     <div id="play" v-if="source != null">
       <iframe :src="source"></iframe>
       <div id="buttons" > 
-        <button @click="source = 'http://www.quantummelody.com/games/DarkStreets/index.html'">DarkStreets</button> &nbsp; &nbsp; &nbsp; 
-        <button @click="source = 'http://www.quantummelody.com/games/IdleHeroes/index.html'">IdleHeroes</button> &nbsp; &nbsp; &nbsp;  
-        <button @click="source = 'http://www.quantummelody.com/games/MarketMaster/stockmarket.html'">MarketMaster</button>
+        <button @click="changeSource('http://www.quantummelody.com/games/DarkStreets/index.html')">DarkStreets</button> &nbsp; &nbsp; &nbsp; 
+        <button @click="changeSource('http://www.quantummelody.com/games/IdleHeroes/index.html')">IdleHeroes</button> &nbsp; &nbsp; &nbsp;  
+        <button @click="changeSource('http://www.quantummelody.com/games/MarketMaster/stockmarket.html')">MarketMaster</button>
       </div>
     </div>    
   </div>
@@ -28,6 +28,12 @@
       source () {
         return this.$store.getters.getGame
       }
+    },
+    methods: {
+      changeSource(game) {
+        console.log(game)
+        this.$store.commit('changeGame', game)
+      }
     }
   }
 </script>
@@ -37,8 +43,8 @@ button {
   margin: 10px;
 }
 iframe {
-  width: 1000px;
-  height: 600px;
+  width: 1100px;
+  height: 650px;
   overflow: auto;
 }
 </style>
