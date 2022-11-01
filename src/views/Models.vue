@@ -1,5 +1,5 @@
 <template>
-  <div id="page">
+  <div class="page">
     <h2>3D Models by Christine Hjelmfelt </h2>
 
     <div class="gallery">  
@@ -10,28 +10,28 @@
       <div class="pictures">    
         <div class="row">  
           <div class="col-6 picture">
-            <img ref="b2" src="../assets/images/Blender_Gazebo.png" @click="BigImage($event.target.src)">
+            <img ref="b2" src="../assets/images-models/Blender_Gazebo.png" @click="BigImage($event.target.src)">
           </div>
           <div class="col-6 picture">
-            <img ref="b3" src="../assets/images/Blender_LampPost.png" @click="BigImage($event.target.src)">
+            <img ref="b3" src="../assets/images-models/Blender_LampPost.png" @click="BigImage($event.target.src)">
           </div>
           <div class="col-6 picture">
-            <img ref="b4" src="../assets/images/Blender_Bridge.png" @click="BigImage($event.target.src)">
+            <img ref="b4" src="../assets/images-models/Blender_Bridge.png" @click="BigImage($event.target.src)">
           </div>
           <div class="col-6 picture">
-            <img ref="b1" src="../assets/images/Blender_Book.png" @click="BigImage($event.target.src)">
+            <img ref="b1" src="../assets/images-models/Blender_Book.png" @click="BigImage($event.target.src)">
           </div> 
         </div>
 
         <div class="row">  
           <div class="col-6 picture">
-            <img ref="b2" src="../assets/images/Blender_Windmill.png" @click="BigImage($event.target.src)">
+            <img ref="b2" src="../assets/images-models/Blender_Windmill.png" @click="BigImage($event.target.src)">
           </div>
           <div class="col-6 picture">
-            <img ref="b2" src="../assets/images/Blender_TabletWithHandles.png" @click="BigImage($event.target.src)">
+            <img ref="b2" src="../assets/images-models/Blender_TabletWithHandles.png" @click="BigImage($event.target.src)">
           </div>
           <div class="col-6 picture">
-            <img ref="b2" src="../assets/images/Blender_HayWagon.png" @click="BigImage($event.target.src)">
+            <img ref="b2" src="../assets/images-models/Blender_HayWagon.png" @click="BigImage($event.target.src)">
           </div>
           
         </div>
@@ -43,13 +43,13 @@
       </div>
       <div class="row pictures"> 
         <div class="col-6 picture">
-          <img ref="r1" src="../assets/images/Roblox_FarmTiles.png" @click="BigImage($event.target.src)">
+          <img ref="r1" src="../assets/images-models/Roblox_FarmTiles.png" @click="BigImage($event.target.src)">
         </div>
         <div class="col-6 picture">
-          <img ref="r2" src="../assets/images/Roblox_Woodworking.png" @click="BigImage($event.target.src)">
+          <img ref="r2" src="../assets/images-models/Roblox_Woodworking.png" @click="BigImage($event.target.src)">
         </div>
         <div class="col-6 picture">
-          <img ref="r4" src="../assets/images/Roblox_TruckWorkZone.png" @click="BigImage($event.target.src)">
+          <img ref="r4" src="../assets/images-models/Roblox_TruckWorkZone.png" @click="BigImage($event.target.src)">
         </div>
       </div>
     </div>

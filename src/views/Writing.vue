@@ -1,5 +1,5 @@
 <template>
-  <div id="page">
+  <div class="page">
     <!-- <a href="../assets/CryptoPaper.pdf"> -->
   </div>
 </template>
@@ -10,7 +10,7 @@
   }
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 
 
 </style>

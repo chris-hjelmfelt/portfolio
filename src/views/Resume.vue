@@ -1,5 +1,5 @@
 <template>
-  <div id="page">
+  <div class="page">
     <h2>Christine Hjelmfelt</h2>
     <h3>Colorado Springs, CO</h3>
     <ul>
