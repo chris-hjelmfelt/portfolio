@@ -1,6 +1,6 @@
 <template>
   <div class="page">
-    <h2 id="title">3D Models</h2>
+    <span id="titleBig">3D Models</span>
 
     <div class="gallery">  
       <div class="row">
@@ -8,20 +8,20 @@
         <span class="note">Click on an image to see a larger version</span>
       </div>
       <div class="row picture-group">
-          <img class="picture" ref="b2" src="../assets/images-models/Blender_Gazebo.png" @click="BigImage($event.target.src)">        
+          <img class="picture" ref="b2" src="../assets/images-models/Blender_Gazebo.png" @click="BigImage($event.target.src)">         
+          <img class="picture" ref="b4" src="../assets/images-models/Blender_Bridge.png" @click="BigImage($event.target.src)">       
+          <img class="picture" ref="b2" src="../assets/images-models/Blender_Windmill.png" @click="BigImage($event.target.src)">         
+          <img class="picture" ref="b2" src="../assets/images-models/Blender_HayWagon.png" @click="BigImage($event.target.src)">      
+          <img class="picture" ref="b1" src="../assets/images-models/Blender_Book.png" @click="BigImage($event.target.src)">            
           <img class="picture" ref="b3" src="../assets/images-models/Blender_LampPost.png" @click="BigImage($event.target.src)">        
-          <img class="picture" ref="b4" src="../assets/images-models/Blender_Bridge.png" @click="BigImage($event.target.src)">        
-          <img class="picture" ref="b1" src="../assets/images-models/Blender_Book.png" @click="BigImage($event.target.src)">        
-          <img class="picture" ref="b2" src="../assets/images-models/Blender_Windmill.png" @click="BigImage($event.target.src)">        
-          <img class="picture" ref="b2" src="../assets/images-models/Blender_TabletWithHandles.png" @click="BigImage($event.target.src)">        
-          <img class="picture" ref="b2" src="../assets/images-models/Blender_HayWagon.png" @click="BigImage($event.target.src)">       
+          <img class="picture" ref="b2" src="../assets/images-models/Blender_Tablet1.png" @click="BigImage($event.target.src)">                  
+          <img class="picture" ref="b2" src="../assets/images-models/Blender_Tablet2.png" @click="BigImage($event.target.src)">     
       </div>
     </div>
 
     <div class="gallery">  
       <div class="row label">
-        <span class="group-title">Models from BloxRiver Farms - A game on the Roblox Platform</span><br>
-        <span class="note">Roblox is a gaming platform for children</span>
+        <span class="group-title">Roblox Models</span>
       </div>
       <div class="row picture-group">         
           <img class="picture" ref="r1" src="../assets/images-models/Roblox_FarmTiles.png" @click="BigImage($event.target.src)">        
@@ -59,26 +59,31 @@
 </script>
 
 <style lang="scss" scoped>
-#title {
+#titleBig {
   display: block;
   width: fit-content;
   margin: auto;
+  margin-bottom: 10px;
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #3470a8;
 }
 .gallery {  
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+  border: 2px solid black;
 }
 .row {
   width: 100%;
   padding: 10px 10px 10px 30px;
-  background-color: #5097b8;
   margin: auto;
 }
 .group-title {
+  font-size: 1.2em;
   font-weight: bold;
 }
 .note {
-  color: white;
+  color: #3470a8;
 }
 .picture-group {  
   display: flex;

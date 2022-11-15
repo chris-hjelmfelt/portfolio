@@ -1,6 +1,6 @@
 <template>
-  <div class="page">
-
+  <div class="page">    
+    <h2 id="title">Games</h2>
     <div class="card" @click="goToRoblox('farm')">
       <img class="thumbnail" src="../assets/images-games/bloxriver-farms.png" />
       <div class="description">
@@ -17,7 +17,7 @@
       </div>
     </div>
 
-    <router-link to="/darkstreets" custom v-slot="{ navigate }">
+    <router-link :to="{name: 'Games', params: { title: 'Dark Streets', source: 'https://www.quantummelody.com/games/DarkStreets/index.html' }}" custom v-slot="{ navigate }">
       <div class="card" @click="navigate" role="link">
         <img class="thumbnail" src="../assets/images-games/dark-streets.png" />
         <div class="description">
@@ -27,7 +27,7 @@
       </div>
     </router-link>
 
-    <router-link to="/idleheroes" custom v-slot="{ navigate }">
+    <router-link :to="{name: 'Games', params: { title: 'Idle Heroes', source: 'https://www.quantummelody.com/games/IdleHeroes/index.html' }}" custom v-slot="{ navigate }">
       <div class="card" @click="navigate" role="link">
         <img class="thumbnail" src="../assets/images-games/idle-heroes.png" />
         <div class="description">
@@ -37,7 +37,7 @@
       </div>
     </router-link>
 
-    <router-link to="/marketmaster" custom v-slot="{ navigate }">
+    <router-link :to="{name: 'Games', params: { title: 'Market Master', source: 'https://www.quantummelody.com/games/MarketMaster/stockmarket.html' }}" custom v-slot="{ navigate }">
       <div class="card" @click="navigate" role="link">
         <img class="thumbnail" src="../assets/images-games/market-master.jpg" />
         <div class="description">
@@ -54,10 +54,6 @@
   export default {
     name: 'GameList',
     methods: {
-      source(game) {
-        console.log(game)
-        this.$store.commit('changeGame', game)
-      },
       goToRoblox(game) {
         if (game == 'farm') {
           window.open("https://www.roblox.com/games/4735375703/BloxRiver-Farms")
@@ -71,6 +67,11 @@
 </script>
 
 <style scoped>
+#title {
+  display: block;
+  width: fit-content;
+  margin: auto;
+}
 .card {
   border: 1px solid black;
   width: 100%;

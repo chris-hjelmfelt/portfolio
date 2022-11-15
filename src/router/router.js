@@ -1,10 +1,8 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import Models from '../views/Models.vue'
+import GameList from '../views/GameList.vue'
 import Games from '../views/Games.vue'
-import IdleHeroes from '../views/IdleHeroes.vue'
-import DarkStreets from '../views/DarkStreets.vue'
-import MarketMaster from '../views/MarketMaster.vue'
 import Writing from '../views/Writing.vue'
 
 const routes = [
@@ -19,24 +17,15 @@ const routes = [
     component: Models
   },
   {
+    path: '/gamelist',
+    name: 'GameList',
+    component: GameList
+  },
+  {
     path: '/games',
     name: 'Games',
-    component: Games
-  },
-  {
-    path: '/idleheroes',
-    name: 'IdleHeroes',
-    component: IdleHeroes
-  },
-  {
-    path: '/darkstreets',
-    name: 'DarkStreets',
-    component: DarkStreets
-  },
-  {
-    path: '/marketmaster',
-    name: 'MarketMaster',
-    component: MarketMaster
+    component: Games,
+    props: true
   },
   {
     path: '/writing',

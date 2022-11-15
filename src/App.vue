@@ -5,14 +5,14 @@
         <router-link to="/">Home</router-link> |
         <span class="extra-link" @click="openResume()">Resume</span> |
         <router-link to="/models">3D Models</router-link> |
-        <router-link to="/games">Games</router-link>
+        <router-link to="/gamelist">Games</router-link>
     </div>
     <div id="left-nav">
       <img id="gears" src="./assets/gears.png"><br>
       <router-link to="/">Home</router-link> <br>
       <span class="extra-link" @click="openResume()">Resume</span> <br>
       <router-link to="/models">3D Models</router-link> <br>
-      <router-link to="/games">Games</router-link> <br>
+      <router-link to="/gamelist">Games</router-link> <br>
     </div>
     <div id="main">
       <router-view />
@@ -58,6 +58,7 @@ body {
   margin: 20px 0 60px 0;
 }
 .page {
+  position: relative;
   width: 100%;
   height: 100%;
   margin: auto;
@@ -94,10 +95,12 @@ a {
   border: 2px solid black;
   overflow: auto;
 }
-iframe {
-  width: 1100px;
-  height: 650px;
-  overflow: auto;
+.title {
+  display: inline-block; 
+  color: #3470a8;
+  font-size: 1.4em;
+  font-weight: bold;
+  margin: 10px 0 0 10px;
 }
 
 @media screen and (max-width: 900px) {
