@@ -94,6 +94,11 @@ a {
   border: 2px solid black;
   overflow: auto;
 }
+iframe {
+  width: 1100px;
+  height: 650px;
+  overflow: auto;
+}
 
 @media screen and (max-width: 900px) {
   #left-nav {

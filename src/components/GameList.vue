@@ -1,5 +1,6 @@
 <template>
   <div class="page">
+
     <div class="card" @click="goToRoblox('farm')">
       <img class="thumbnail" src="../assets/images-games/bloxriver-farms.png" />
       <div class="description">
@@ -7,6 +8,7 @@
         A farming game on the Roblox platform.
       </div>
     </div>
+
     <div class="card" @click="goToRoblox('nebula')">
       <img class="thumbnail" src="../assets/images-games/nebula-sciencecolony.jpg" />
       <div class="description">
@@ -14,27 +16,37 @@
         A game on the Roblox platform. Explore a science colony on another planet. 
       </div>
     </div>
-    <div class="card" @click="source('http://www.quantummelody.com/games/DarkStreets/index.html')">
-      <img class="thumbnail" src="../assets/images-games/dark-streets.png" />
-      <div class="description">
-        <span class="title">Dark Streets</span>
-        A noir style fighting game, that pits the player versus a series of ai competitors.
+
+    <router-link to="/darkstreets" custom v-slot="{ navigate }">
+      <div class="card" @click="navigate" role="link">
+        <img class="thumbnail" src="../assets/images-games/dark-streets.png" />
+        <div class="description">
+          <span class="title">Dark Streets</span>
+          A noir style fighting game, that pits the player versus a series of ai competitors.
+        </div>
       </div>
-    </div>
-    <div class="card" @click="source('http://www.quantummelody.com/games/IdleHeroes/index.html')">
-      <img class="thumbnail" src="../assets/images-games/idle-heroes.png" />
-      <div class="description">
-        <span class="title">Idle Heroes vs Monsters</span>
-        An idle game. Fight a series of monsters and collect heroes as your reputation grows.
+    </router-link>
+
+    <router-link to="/idleheroes" custom v-slot="{ navigate }">
+      <div class="card" @click="navigate" role="link">
+        <img class="thumbnail" src="../assets/images-games/idle-heroes.png" />
+        <div class="description">
+          <span class="title">Idle Heroes vs Monsters</span>
+          An idle game. Fight a series of monsters and collect heroes as your reputation grows.
+        </div>
       </div>
-    </div>
-    <div class="card" @click="source('http://www.quantummelody.com/games/MarketMaster/stockmarket.html')">
-      <img class="thumbnail" src="../assets/images-games/market-master.jpg" />
-      <div class="description">
-        <span class="title">Market Master</span>
-        A stock market simulator.
+    </router-link>
+
+    <router-link to="/marketmaster" custom v-slot="{ navigate }">
+      <div class="card" @click="navigate" role="link">
+        <img class="thumbnail" src="../assets/images-games/market-master.jpg" />
+        <div class="description">
+          <span class="title">Market Master</span>
+          A stock market simulator.
+        </div>
       </div>
-    </div>
+    </router-link>
+
   </div>
 </template>
 
