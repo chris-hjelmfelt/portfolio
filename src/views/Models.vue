@@ -15,7 +15,8 @@
           <img class="picture" ref="b1" src="../assets/images-models/Blender_Book.png" @click="BigImage($event.target.src)">            
           <img class="picture" ref="b3" src="../assets/images-models/Blender_LampPost.png" @click="BigImage($event.target.src)">        
           <img class="picture" ref="b2" src="../assets/images-models/Blender_Tablet1.png" @click="BigImage($event.target.src)">                  
-          <img class="picture" ref="b2" src="../assets/images-models/Blender_Tablet2.png" @click="BigImage($event.target.src)">     
+          <img class="picture" ref="b2" src="../assets/images-models/Blender_Tablet2.png" @click="BigImage($event.target.src)">                            
+          <img class="picture" ref="b2" src="../assets/images-models/Blender_Tire1.png" @click="BigImage($event.target.src)">     
       </div>
     </div>
 

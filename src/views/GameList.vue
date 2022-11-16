@@ -17,35 +17,47 @@
       </div>
     </div>
 
-    <router-link :to="{name: 'Games', params: { title: 'Dark Streets', source: 'https://www.quantummelody.com/games/DarkStreets/index.html' }}" custom v-slot="{ navigate }">
-      <div class="card" @click="navigate" role="link">
+    <!-- <router-link :to="{name: 'Games', params: { title: 'Dark Streets', source: 'https://www.quantummelody.com/games/DarkStreets/index.html' }}" custom v-slot="{ navigate }">
+      <div class="card" @click="navigate" role="link"> -->
+      <div class="card" @click="goToKongregate('dark')">      
         <img class="thumbnail" src="../assets/images-games/dark-streets.png" />
         <div class="description">
           <span class="title">Dark Streets</span>
-          A noir style fighting game, that pits the player versus a series of ai competitors.
+          A noir style fighting game, that pits the player versus a series of AI competitors.
         </div>
       </div>
-    </router-link>
+    <!-- </router-link> -->
 
-    <router-link :to="{name: 'Games', params: { title: 'Idle Heroes', source: 'https://www.quantummelody.com/games/IdleHeroes/index.html' }}" custom v-slot="{ navigate }">
-      <div class="card" @click="navigate" role="link">
+    <!-- <router-link :to="{name: 'Games', params: { title: 'Idle Heroes', source: 'https://www.quantummelody.com/games/IdleHeroes/index.html' }}" custom v-slot="{ navigate }">
+      <div class="card" @click="navigate" role="link"> -->
+      <div class="card" @click="goToKongregate('heroes')">    
         <img class="thumbnail" src="../assets/images-games/idle-heroes.png" />
         <div class="description">
           <span class="title">Idle Heroes vs Monsters</span>
           An idle game. Fight a series of monsters and collect heroes as your reputation grows.
         </div>
       </div>
-    </router-link>
+    <!-- </router-link> -->
 
-    <router-link :to="{name: 'Games', params: { title: 'Market Master', source: 'https://www.quantummelody.com/games/MarketMaster/stockmarket.html' }}" custom v-slot="{ navigate }">
-      <div class="card" @click="navigate" role="link">
+    <!-- <router-link :to="{name: 'Games', params: { title: 'Market Master', source: 'https://www.quantummelody.com/games/MarketMaster/stockmarket.html' }}" custom v-slot="{ navigate }">
+      <div class="card" @click="navigate" role="link"> -->
+      <div class="card" @click="goToKongregate('market')">     
         <img class="thumbnail" src="../assets/images-games/market-master.jpg" />
         <div class="description">
           <span class="title">Market Master</span>
           A stock market simulator.
         </div>
       </div>
-    </router-link>
+    <!-- </router-link> -->
+
+    <div class="card" @click="goToKongregate('return')">     
+      <img class="thumbnail" src="../assets/images-games/return-mountain.jpg" />
+      <div class="description">
+        <span class="title">Return From the Mountain</span>
+        A simple adventure in old text based RPG style.
+      </div>
+    </div>
+
 
   </div>
 </template>
@@ -60,6 +72,20 @@
         }
         else if (game == 'nebula') {
           window.open("https://www.roblox.com/games/2714548054/Nebula-Science-Colony")
+        }
+      },
+      goToKongregate(game) {
+        if (game == 'dark') {
+          window.open("https://www.kongregate.com/games/Cyberspirit/dark-streets")
+        }
+        else if (game == 'heroes') {
+          window.open("https://www.kongregate.com/games/Cyberspirit/idle-heroes-vs-monsters")
+        }
+        else if (game == 'market') {
+          window.open("https://www.kongregate.com/games/Cyberspirit/market-master")
+        }
+        else {
+          window.open("https://www.kongregate.com/games/Cyberspirit/return-from-the-mountain")
         }
       }
     } 
