@@ -4,6 +4,7 @@ import Models from '../views/Models.vue'
 import GameList from '../views/GameList.vue'
 import Games from '../views/Games.vue'
 import Writing from '../views/Writing.vue'
+import Recommendations from '../views/Recommendations.vue'
 
 const routes = [
   {
@@ -31,6 +32,11 @@ const routes = [
     path: '/writing',
     name: 'Writing',
     component: Writing
+  },
+  {
+    path: '/recommendations',
+    name: 'Recommendations',
+    component: Recommendations
   }
 ]
 

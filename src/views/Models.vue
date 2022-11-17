@@ -1,6 +1,6 @@
 <template>
   <div class="page">
-    <span id="titleBig">3D Models</span>
+    <span class="bigTitle">3D Models</span>
 
     <div class="gallery">  
       <div class="row">
@@ -60,15 +60,6 @@
 </script>
 
 <style lang="scss" scoped>
-#titleBig {
-  display: block;
-  width: fit-content;
-  margin: auto;
-  margin-bottom: 10px;
-  font-size: 1.8em;
-  font-weight: bold;
-  color: #3470a8;
-}
 .gallery {  
   width: 100%;
   margin-bottom: 40px;

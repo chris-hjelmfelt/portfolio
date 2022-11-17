@@ -5,7 +5,8 @@
         <router-link to="/">Home</router-link> |
         <span class="extra-link" @click="openResume()">Resume</span> |
         <router-link to="/models">3D Models</router-link> |
-        <router-link to="/gamelist">Games</router-link>
+        <router-link to="/gamelist">Games</router-link> | 
+        <router-link to="/recommendations">Recommendations</router-link>
     </div>
     <div id="left-nav">
       <img id="gears" src="./assets/gears.png"><br>
@@ -13,6 +14,7 @@
       <span class="extra-link" @click="openResume()">Resume</span> <br>
       <router-link to="/models">3D Models</router-link> <br>
       <router-link to="/gamelist">Games</router-link> <br>
+      <router-link to="/recommendations">Recommendations</router-link>
     </div>
     <div id="main">
       <router-view />
@@ -72,7 +74,7 @@ body {
   visibility: collapse;
 }
 #left-nav {
-  width: 160px;
+  width: 190px;
   height: 100%;
   padding: 20px;
   float: left;
@@ -90,7 +92,7 @@ a {
 }
 #main {
   float: left;
-  width: calc(100% - 160px);
+  width: calc(100% - 190px);
   height: 100%;
   border: 2px solid black;
   overflow: auto;
@@ -101,6 +103,16 @@ a {
   font-size: 1.4em;
   font-weight: bold;
   margin: 10px 0 0 10px;
+}
+.bigTitle {
+  display: block;
+  width: fit-content;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #3470a8;
 }
 
 @media screen and (max-width: 900px) {
