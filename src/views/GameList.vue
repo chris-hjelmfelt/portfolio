@@ -1,6 +1,6 @@
 <template>
   <div class="page">    
-    <h2 id="title">Games</h2>
+    <h1 id="heading">Games</h1>
     <div class="card" @click="goToRoblox('farm')">
       <img class="thumbnail" src="../assets/images-games/bloxriver-farms.png" />
       <div class="description">
@@ -42,7 +42,7 @@
     <!-- <router-link :to="{name: 'Games', params: { title: 'Market Master', source: 'https://www.quantummelody.com/games/MarketMaster/stockmarket.html' }}" custom v-slot="{ navigate }">
       <div class="card" @click="navigate" role="link"> -->
       <div class="card" @click="goToKongregate('market')">     
-        <img class="thumbnail" src="../assets/images-games/market-master.jpg" />
+        <img class="thumbnail" src="../assets/images-games/market-master.png" />
         <div class="description">
           <span class="title">Market Master</span>
           A stock market simulator.
@@ -51,7 +51,7 @@
     <!-- </router-link> -->
 
     <div class="card" @click="goToKongregate('return')">     
-      <img class="thumbnail" src="../assets/images-games/return-mountain.jpg" />
+      <img class="thumbnail" src="../assets/images-games/return-mountain.png" />
       <div class="description">
         <span class="title">Return From the Mountain</span>
         A simple adventure in old text based RPG style.
@@ -93,21 +93,21 @@
 </script>
 
 <style scoped>
-#title {
+#heading {
   display: block;
-  width: fit-content;
+  width: fit-content;  
+  color: #3470a8;
   margin: auto;
+  margin-bottom: 10px;
 }
 .card {
-  border: 1px solid black;
+  border: 2px solid black;
   width: 100%;
-  height: 150px;
   margin-bottom: 20px;
   overflow: hidden;
 }
 .thumbnail {
-  width: 150px;
-  height: 150px;
+  width: 200px;
   border: 1px solid black;  
   float: left; 
 }
@@ -117,10 +117,9 @@
   margin: 0 0 5px 0;
 }
 .description {
-  width: calc(100% - 150px);
+  width: calc(100% - 200px);
   height: 100%;
   padding: 10px 10px 10px 20px;
-  border: 1px solid black;
   float: left;
   overflow: auto;
 }

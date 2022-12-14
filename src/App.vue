@@ -74,7 +74,7 @@ body {
   visibility: collapse;
 }
 #left-nav {
-  width: 190px;
+  width: 230px;
   height: 100%;
   padding: 20px;
   float: left;
@@ -92,7 +92,7 @@ a {
 }
 #main {
   float: left;
-  width: calc(100% - 190px);
+  width: calc(100% - 230px);
   height: 100%;
   border: 2px solid black;
   overflow: auto;
