@@ -3,17 +3,19 @@
     <div id="top-nav">
       <img id="gears" src="./assets/gears.png"><br>
         <router-link to="/">Home</router-link> |
-        <span class="extra-link" @click="openResume()">Resume</span> |
         <router-link to="/models">3D Models</router-link> |
         <router-link to="/gamelist">Games</router-link> | 
+        <router-link to="/crypto">Crypto & Blockchain</router-link> | 
+        <span class="extra-link" @click="openResume()">Resume</span> |
         <router-link to="/recommendations">Recommendations</router-link>
     </div>
     <div id="left-nav">
       <img id="gears" src="./assets/gears.png"><br>
       <router-link to="/">Home</router-link> <br>
-      <span class="extra-link" @click="openResume()">Resume</span> <br>
       <router-link to="/models">3D Models</router-link> <br>
       <router-link to="/gamelist">Games</router-link> <br>
+      <router-link to="/crypto">Crypto / Blockchain</router-link> <br>
+      <span class="extra-link" @click="openResume()">Resume</span> <br>
       <router-link to="/recommendations">Recommendations</router-link>
     </div>
     <div id="main">

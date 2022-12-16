@@ -3,7 +3,7 @@ import Home from '../views/Home.vue'
 import Models from '../views/Models.vue'
 import GameList from '../views/GameList.vue'
 import Games from '../views/Games.vue'
-import Writing from '../views/Writing.vue'
+import CryptoBlockchain from '../views/CryptoBlockchain.vue'
 import Recommendations from '../views/Recommendations.vue'
 
 const routes = [
@@ -29,9 +29,9 @@ const routes = [
     props: true
   },
   {
-    path: '/writing',
-    name: 'Writing',
-    component: Writing
+    path: '/crypto',
+    name: 'CryptoBlockchain',
+    component: CryptoBlockchain
   },
   {
     path: '/recommendations',
