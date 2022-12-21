@@ -76,16 +76,16 @@
       },
       goToKongregate(game) {
         if (game == 'dark') {
-          window.open("https://www.kongregate.com/games/Cyberspirit/dark-streets")
+          window.open("https://quantummelody.com/games/DarkStreets")
         }
         else if (game == 'heroes') {
-          window.open("https://www.kongregate.com/games/Cyberspirit/idle-heroes-vs-monsters")
+          window.open("https://quantummelody.com/games/IdleHeroes")
         }
         else if (game == 'market') {
-          window.open("https://www.kongregate.com/games/Cyberspirit/market-master")
+          window.open("https://quantummelody.com/games/MarketMaster/stockmarket.html")
         }
         else {
-          window.open("https://www.kongregate.com/games/Cyberspirit/return-from-the-mountain")
+          window.open("https://quantummelody.com/games/ReturnMountain")
         }
       }
     } 
