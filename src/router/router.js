@@ -4,7 +4,6 @@ import Models from '../views/Models.vue'
 import GameList from '../views/GameList.vue'
 import Games from '../views/Games.vue'
 import CryptoBlockchain from '../views/CryptoBlockchain.vue'
-import Recommendations from '../views/Recommendations.vue'
 
 const routes = [
   {
@@ -32,11 +31,6 @@ const routes = [
     path: '/crypto',
     name: 'CryptoBlockchain',
     component: CryptoBlockchain
-  },
-  {
-    path: '/recommendations',
-    name: 'Recommendations',
-    component: Recommendations
   }
 ]
 

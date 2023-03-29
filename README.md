@@ -11,6 +11,11 @@ This is a collection of things I have made
 Made with Vue.js  
 
 
+To Run:    
+```
+> npm run serve
+```
+
 
 
 
